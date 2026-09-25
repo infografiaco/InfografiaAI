@@ -1,0 +1,64 @@
+# Audience — InfografiAI
+# Ordered by strategic priority, not by size. Each segment's messaging blend ratio
+# (capability vs cost/speed) should be tuned per positioning.md's open item.
+
+segments:
+  - name: Enterprise & Government (inherited from Infografia)
+    priority: 1
+    description: >
+      Existing Infografia relationships (transport, health, science, infrastructure,
+      federal/state government) who need higher-production-value explainer, campaign
+      or internal-comms content than traditional animation budgets allow.
+    entry_point: Warm — via existing Infografia account relationships.
+    messaging_blend: "80% capability / 20% cost-speed"
+    rationale: >
+      This audience already trusts Infografia's craft and rigor. They don't need to be
+      sold on "AI is legitimate" — they need reassurance the output meets the same bar,
+      delivered faster and more flexibly than a traditional production pipeline allows.
+    watch_outs:
+      - Risk-averse re: AI governance, copyright, sourcing of training data.
+      - Needs the AI Context Appendix / production transparency, not just a showreel.
+
+  - name: Technology & Product companies
+    priority: 2
+    description: >
+      Companies needing product films, concept films, launch content or technical
+      visualisation (hardware, infrastructure, science-adjacent tech) at a pace their
+      internal timelines demand.
+    entry_point: Cold/warm — direct outreach, portfolio, referral from tech network.
+    messaging_blend: "60% capability / 40% cost-speed"
+    rationale: >
+      This audience is comparing InfografiAI against traditional production houses AND
+      against in-house AI experimentation. Cost/speed matters more here because it's a
+      genuine decision factor against the alternative of "just do it ourselves cheaply."
+
+  - name: Brand / Advertising clients
+    priority: 3
+    description: >
+      Brands wanting cinematic short-form campaign films, brand films, or experimental
+      content that a traditional agency would previously have quoted at a scale the
+      client can't justify.
+    entry_point: Cold — agency partnerships, portfolio-led, industry visibility.
+    messaging_blend: "70% capability / 30% cost-speed"
+    rationale: >
+      This is the most competitive, most saturated-with-mediocre-AI-content segment.
+      Capability and taste have to lead hard here or InfografiAI reads as one of the
+      "enormous amounts of mediocre AI content" it's explicitly trying not to be.
+
+  - name: Creative Technology / industry peers (secondary — talent & positioning)
+    priority: 4
+    description: >
+      Not a paying client segment — this is the audience for Nick's personal
+      repositioning toward Creative Technologist / Generative Creative Director roles,
+      and for attracting future collaborators.
+    entry_point: Case studies, process breakdowns, conference/community visibility.
+    messaging_blend: "90% capability / 10% cost-speed"
+    rationale: >
+      This audience cares about method, not budget. Process transparency (the AI
+      Context Appendix logic) is the primary content, not a footnote.
+
+exclusions:
+  - description: >
+      Clients who explicitly want "cheap and fast AI content" with no creative direction
+      involved. This is the commoditised bottom of the market InfografiAI is positioned
+      against, not toward.
