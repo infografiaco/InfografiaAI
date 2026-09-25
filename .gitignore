@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Build/export artifacts (if you later render decks, images, etc. into this repo)
+*.tmp
+node_modules/
+dist/
+build/
