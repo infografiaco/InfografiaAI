@@ -38,8 +38,10 @@ AI is the production capability. Creative direction is the product.
 ## What earns the position (proof, not claims)
 - 15+ years, named enterprise/government clients (Home Affairs, CSIRO, Transport for NSW, Qantas, NSW
   Reconstruction Authority) — credibility a pure AI studio cannot borrow or fake.
-- Hybrid pipeline fluency: C4D → ComfyUI → Higgsfield / Seedance / Kling → After Effects → traditional
-  animation, sound, edit. Technical depth most "AI creatives" don't have and most agencies can't operate.
+- Hybrid pipeline fluency: the pipeline changes with the intention and need of each brief. Traditional
+  toolsets and skills (C4D, After Effects, traditional animation, sound, edit) are combined with generative
+  tools (ComfyUI, Higgsfield, Seedance, Kling) in whatever order the work needs. Technical depth most
+  "AI creatives" don't have and most agencies can't operate.
 - Process transparency as a selling point: showing direction (storyboard → previs → AI transformation →
   compositing), not just a finished clip with no visible craft behind it.
 - Demonstrated capability unlocked by AI-native cost structure — projects that would have needed a

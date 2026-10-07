@@ -13,9 +13,10 @@ the same tools — the gap is direction, not access.
 Have craft and client trust, are bolting AI onto existing workflows as a cost-cutting
 add-on rather than a genuine capability. Often produce AI content that still reads as
 an afterthought — a VFX shortcut, not a directed creative decision.
-**InfografiAI's edge:** AI-native from the brief onward, not AI-as-patch. The hybrid
-pipeline (C4D → ComfyUI → Higgsfield/Seedance/Kling → After Effects) is the default
-method, not an occasional shortcut.
+**InfografiAI's edge:** AI-native from the brief onward, not AI-as-patch. A hybrid
+pipeline, combining traditional tools (C4D, After Effects) with generative ones (ComfyUI,
+Higgsfield/Seedance/Kling) and configured for each brief, is the default method, not an
+occasional shortcut.
 
 ### 3. In-house / DIY AI experimentation by clients themselves
 Increasingly common — clients try ComfyUI or consumer tools internally before
