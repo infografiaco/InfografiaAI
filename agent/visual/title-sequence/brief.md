@@ -20,7 +20,8 @@ How I like to work:
 - **Line:** "Direction, Not Generation."
 - **Descriptor:** Multimedia AI House.
 - **Positioning:** creative capability leads. Speed and cost are proof points, never the headline.
-- **Audience for this piece:** communications teams in enterprise and government who want AI-made film and motion that still looks directed and owned.
+- **The service:** one service, AI creative direction, for any design output. Film, animation, social and digital are where it shows up, not separate services. It is built on 15 years of art direction at Infografia, extended with AI.
+- **Audience for this piece:** communications teams in enterprise and government who want AI-made work that still looks directed and owned.
 
 ## 3. The idea
 
@@ -102,7 +103,7 @@ Also attach from my files: the "Directed by InfografiAI" title frame, and the 16
 3. **Sound:** music only, sound design of the build, or a voiceover?
 4. **Length:** 30, 45 or 60 seconds?
 5. **Titles:** credit-style cards as drafted, or fewer and bigger?
-6. **Service words:** keep "Film. Design. Motion." or narrow to film and motion only?
+6. **Service words:** the service is AI creative direction across film, animation, social and digital. Which output words appear on screen, if any?
 
 ## 10. Production notes
 
