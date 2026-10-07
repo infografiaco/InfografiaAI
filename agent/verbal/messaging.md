@@ -25,9 +25,11 @@ storyboarded, camera-choreographed and art-directed with the same intent as trad
 production — continuity, consistency, and a reason for every shot, not a lucky prompt.
 
 ### Pillar 2 — Hybrid, not pure-AI
-Never claim "100% AI generated" as a virtue. The message is the pipeline: 3D → AI
-transformation → traditional compositing, sound, edit. This is explicitly positioned
-against pure prompt-to-video output.
+Never claim "100% AI generated" as a virtue. The message is that the pipeline is built to
+suit the brief: traditional toolsets and skills (design, 3D, animation, film, compositing,
+sound, edit) combined with generative tools, in whatever order the intention and need of the
+work call for. There is no single fixed chain. This is explicitly positioned against pure
+prompt-to-video output.
 
 ### Pillar 3 — Borrowed rigor, new register
 InfografiAI is not a discount version of Infografia and not a disconnected startup. It's
