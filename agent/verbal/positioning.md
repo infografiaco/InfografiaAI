@@ -4,6 +4,16 @@
 AI-directed creative production. Not "AI video studio," not "production company," not "AI content."
 The discipline of art-directing generative AI the way a DP directs a camera — not the way you type a prompt.
 
+## The service
+One service: AI creative direction, for any design output.
+
+Film, animation, social and digital are where the direction shows up. They are outputs, not
+separate services. What the client buys is the direction itself: 15 years of art direction
+experience from Infografia, with skills and capabilities extended by AI.
+
+"Multimedia" describes the range of outputs, not a list of offers. The brand should never read
+as "everything for everyone" — the single offer is direction.
+
 ## Structural position
 InfografiAI is a division of Infografia — "InfografiAI, by Infografia" — not a standalone sister brand.
 It inherits Infografia's 15-year credibility and enterprise/government trust, while operating its own
