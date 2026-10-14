@@ -1,4 +1,4 @@
-# Voice — InfografiAI
+# Voice — infograf/ai
 
 ## Voice in one line
 A director explaining a decision, not a startup pitching a feature.
@@ -25,7 +25,7 @@ A director explaining a decision, not a startup pitching a feature.
   content (bios, talks, personal case-study framing).
 
 ## Reference test
-Before publishing any InfografiAI copy, check it against messaging.md's word lists
+Before publishing any infograf/ai copy, check it against messaging.md's word lists
 (use / avoid) and against this question: "Does this describe direction, or does it just
 claim AI capability?" If it's the latter, cut it.
 
@@ -35,6 +35,6 @@ claim AI capability?" If it's the latter, cut it.
 "We're revolutionizing content creation with cutting-edge generative AI, delivering
 seamless next-gen visuals at record speed."
 
-**After (InfografiAI voice):**
+**After (infograf/ai voice):**
 "Fifteen years of directing cameras. Now we direct generative pipelines the same way —
 shot by shot, with a reason for each one."

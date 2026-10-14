@@ -1,10 +1,12 @@
-# Brief: InfografiAI title sequence, "Building the Director"
+# Brief: infograf/ai title sequence, "Building the Director"
+
+> Original brief, kept for the record. The trailer moved on from it; see `../trailer/readme.md` for the current direction and the preview cut.
 
 Paste this whole brief into a new chat. It is written to stand alone. Reference images are in `agent/visual/references/` in this repo.
 
 ## 1. What I want from you
 
-Help me develop and produce a short title sequence for InfografiAI. Work with me as an experienced creative director, cinematographer and AI video specialist. Assume I know design and storytelling; skip beginner explanations.
+Help me develop and produce a short title sequence for infograf/ai. Work with me as an experienced creative director, cinematographer and AI video specialist. Assume I know design and storytelling; skip beginner explanations.
 
 How I like to work:
 - Talk the idea and shot list through with me before generating anything.
@@ -16,7 +18,7 @@ How I like to work:
 ## 2. Who we are
 
 - **Infografia** is my 15-year-old Australian information design and motion studio (enterprise and government clients).
-- **InfografiAI** is its new AI-enhanced division: an evolution of Infografia, not a separate brand.
+- **infograf/ai** is its new AI-enhanced division: an evolution of Infografia, not a separate brand.
 - **Line:** "Direction, Not Generation."
 - **Descriptor:** Multimedia AI House.
 - **Positioning:** creative capability leads. Speed and cost are proof points, never the headline.
@@ -73,7 +75,7 @@ On-screen titles sit on the shots like credits. Draft set, to refine with me:
 - "Built with intent"
 - "Every frame directed"
 - "Infografia, enhanced"
-- End card: "Direction, Not Generation." then the logo, then "Directed by InfografiAI"
+- End card: "Direction, Not Generation." then the logo, then "Directed by infograf/ai"
 
 Type rules:
 - Headline and end card: heavy grotesque sans (Hanken Grotesk ExtraBold), sentence case.
@@ -94,7 +96,7 @@ These exist in my Higgsfield library (same account). Job IDs are given so they c
 | Flat relief texture | `4ef76fc2-8811-4f5c-9305-142b5708cd4e` |
 | Logo (uploaded) | `9a26602b-cd3d-41e9-8d80-16e038a67ab1` |
 
-Also attach from my files: the "Directed by InfografiAI" title frame, and the 16:9 dark and light posters with real type.
+Also attach from my files: the "Directed by infograf/ai" title frame, and the 16:9 dark and light posters with real type.
 
 ## 9. Decisions to make with me first
 

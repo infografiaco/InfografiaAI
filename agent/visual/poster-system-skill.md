@@ -1,9 +1,9 @@
 ---
 name: infografiai-poster-system
-description: Build or reflow an InfografiAI poster featuring The Director at any aspect ratio, in light or dark, without breaking brand consistency.
+description: Build or reflow an infograf/ai poster featuring The Director at any aspect ratio, in light or dark, without breaking brand consistency.
 ---
 
-# InfografiAI poster system
+# infograf/ai poster system
 
 ## 1. Character: The Director (fixed)
 
@@ -37,9 +37,9 @@ A futurist avatar of us as directors, built from the founder's likeness. Not a g
 
 ## 4. Logo
 
-- Stacked lockup: IΛI with dial dot above infograf/ai. Flat, one colour, in a bottom corner on the page margin.
-- Never embossed, boxed, redrawn or placed over the face.
-- The embossed monogram is allowed only on the wall of the social variant.
+- Horizontal lockup: the mark (a crossbar-less A with a dial at its base and a slice cut out as the pointer) beside the infograf/ai wordmark. Flat, one colour, small, in a bottom corner on the page margin.
+- Files: `logo/infograf-ai_lockup_horizontal.svg`. Never redraw it or ask a model to render it; place the vector after generation.
+- Never embossed, boxed, recoloured or placed over the face. No blue pointer: the slice stays cut out.
 
 ## 5. Layout per ratio
 
@@ -52,7 +52,7 @@ A futurist avatar of us as directors, built from the founder's likeness. Not a g
 | Labels | 3, around the figure | 3, around the figure | 3, around the figure |
 | Logo | Bottom right | Bottom left | Bottom left |
 
-**9:16 social variant:** direct-to-camera selfie, one hand raised, embossed IΛI on the wall. White interface overlay: top bar, right icon column, bottom-left profile, handle, caption and audio line. Face clear of all interface elements.
+**9:16 social variant:** direct-to-camera selfie, one hand raised, plain wall (the existing 9:16 frames still show the old IΛI embossed on the wall and need regenerating). White interface overlay: top bar, right icon column, bottom-left profile, handle, caption and audio line. Face clear of all interface elements.
 
 ## 6. Rules for every reflow
 

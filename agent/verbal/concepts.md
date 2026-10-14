@@ -1,9 +1,8 @@
-# Concepts — InfografiAI
+# Concepts — infograf/ai
 
 ## Naming status
-"InfografiAI" remains the working name per the brief — treat as provisional, not final.
-Note for brand book: acknowledge this is deliberate (per section 13, avoid "logo + AI
-gradient" thinking) — the concept work below should stand even if the final name changes.
+The name is written **infograf/ai**: lower case, with the slash, in every piece of copy, the same as the wordmark.
+Where a slash cannot be used (file names, URLs, code), use `infograf-ai`. The old working form "InfografiAI" is retired from copy.
 
 ## Core conceptual territory: "Direction, not generation"
 Every visual and verbal concept should trace back to this idea. The brand is not about

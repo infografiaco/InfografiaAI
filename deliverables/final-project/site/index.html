@@ -1,0 +1,477 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<meta name="description" content="infograf/ai brand book: a speculative brand world, directed with AI. Direction, Not Generation.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="infograf/ai Brand Book">
+<meta property="og:description" content="A speculative brand world, directed with AI. Direction, Not Generation.">
+<meta property="og:image" content="img/trailer_poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<title>infograf/ai Brand Book</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel&family=Hanken+Grotesk:wght@400;600;800&display=swap">
+<style>
+/* Layout: one full-screen section per brand-book page, fixed wordmark bar on top, fixed counter + Next pill below. Two tones only, like the brand. */
+:root{
+  --bg:#F5F4F9; --surface:#FFFFFF; --fg:#2B2A2F; --muted:#5E5E66; --line:#DCDCE2; --pill-bg:#3356DE; --pill-fg:#FFFFFF;
+  --display:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
+  --text:"Abel","Arial Narrow","Helvetica Neue",Arial,sans-serif;
+  --bar:64px; color-scheme:light;
+}
+html{scroll-behavior:smooth;scroll-snap-type:y proximity}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--fg);font-family:var(--text);font-size:18px;line-height:1.5;letter-spacing:.01em}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--fg);outline-offset:3px}
+
+.topbar,.bottombar{position:fixed;left:0;right:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding-left:max(40px,env(safe-area-inset-left,0px));padding-right:max(40px,env(safe-area-inset-right,0px));background:linear-gradient(var(--bg) 60%,transparent)}
+.topbar{top:0;padding-top:calc(18px + env(safe-area-inset-top,0px));padding-bottom:18px}
+.bottombar{bottom:0;padding-bottom:calc(16px + env(safe-area-inset-bottom,0px));padding-top:16px;background:linear-gradient(transparent,var(--bg) 40%)}
+.topbar .home{display:flex;color:var(--fg)}
+.topbar .lockup{height:20px;width:auto}
+.topbar .where{font-size:14px;color:var(--fg);letter-spacing:.06em}
+.bottombar .doc{font-size:15px;color:var(--muted)}
+.ctrls{display:flex;align-items:center;gap:12px}
+.count{font-size:15px;font-variant-numeric:tabular-nums;color:var(--muted)}
+.up{width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--fg);display:grid;place-items:center;cursor:pointer}
+.next{height:48px;border-radius:24px;border:0;background:var(--pill-bg);color:var(--pill-fg);padding:0 22px;font-family:var(--display);font-size:16px;font-weight:400;display:flex;align-items:center;gap:8px;cursor:pointer;max-width:min(440px,60vw)}
+.next b{font-weight:600}
+.next .t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:400}
+.up svg,.next svg{width:16px;height:16px;flex:none}
+
+.slide{min-height:100svh;scroll-snap-align:start;display:flex;flex-direction:column;justify-content:center;gap:28px;
+  padding-block:calc(var(--bar) + 40px) calc(var(--bar) + 48px);
+  padding-left:max(40px,env(safe-area-inset-left,0px));padding-right:max(40px,env(safe-area-inset-right,0px));
+  max-width:1440px;margin:0 auto;box-sizing:border-box}
+.slide-head{display:grid;gap:6px}
+.eyebrow{margin:0;font-size:14px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted)}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
+h2{font-size:clamp(26px,2.6vw,36px);font-weight:800;line-height:1.05;letter-spacing:-.02em}
+h3{font-size:15px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-top:18px}
+h3:first-child{margin-top:0}
+p{margin:6px 0 0;max-width:62ch}
+.slide-body{display:grid;gap:28px;min-width:0}
+.statement{font-family:var(--display);font-weight:800;font-size:clamp(24px,2.3vw,32px);line-height:1.05;letter-spacing:-.02em;margin:0 0 14px}
+.lead p{font-size:18px;max-width:80ch;margin:0}
+
+figure{margin:0}
+.plate img{display:block;width:100%;height:auto;max-height:56svh;object-fit:contain;object-position:left center}
+.caption-row{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap}
+.caption{flex:1 1 420px;min-width:0}
+.caption p{color:var(--muted);margin:0;max-width:90ch}
+.qr{display:flex;align-items:flex-end;gap:14px;text-decoration:none;color:var(--muted);font-size:14px}
+.qr img{width:120px;height:120px;border-radius:4px;background:#F2F2F5;padding:8px}
+.qr span{max-width:9ch}
+
+.cols{display:grid;gap:40px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.cols .col{min-width:0}
+.cols.two{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:64px}
+.cols.cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:28px;display:grid;gap:10px;align-content:start}
+.card .num{font-size:15px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card h3{font-size:24px;text-transform:none;letter-spacing:-.01em;font-weight:800;margin:0}
+.card p{margin:0}
+
+.side{display:grid;gap:48px;align-items:start}
+.side.text-left{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr)}
+.side.text-right{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr)}
+.side-text{min-width:0}
+.side-media{min-width:0;display:grid;gap:20px}
+.side-media .plate img{max-height:none}
+.film{position:relative}
+.film video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#0B0B0D;border-radius:2px}
+.sound{position:absolute;right:16px;bottom:16px;height:36px;padding:0 16px;border-radius:18px;border:1px solid rgba(255,255,255,.35);background:rgba(11,11,13,.55);color:#fff;font-family:var(--display);font-size:14px;cursor:pointer;backdrop-filter:blur(6px)}
+.pairs{display:grid;gap:22px}
+.pair{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:18px;align-items:start}
+.pair img{width:100%;height:auto;display:block;border-radius:2px}
+.pair figcaption{font-size:16px;color:var(--muted)}
+.pair figcaption strong{display:block;color:var(--fg);font-family:var(--display);font-weight:800;font-size:18px;margin-bottom:4px}
+.score{display:inline-block;margin-top:8px;font-family:var(--display);font-weight:800;color:var(--fg);font-size:22px}
+
+.cover,.end{align-items:center;text-align:center;max-width:none}
+.cover-inner{display:grid;justify-items:center;gap:14px;margin-top:auto}
+.stacked{width:min(210px,50vw);height:auto;color:var(--muted);margin-bottom:28px}
+h1{font-size:clamp(30px,3vw,40px);font-weight:800;letter-spacing:-.01em;line-height:1.15}
+.sub{font-size:clamp(19px,1.8vw,26px);color:var(--muted);margin:0}
+.by{font-size:16px;color:var(--muted);margin-top:24px}
+.index{margin-top:auto;font-size:17px;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:center;gap:10px 14px}
+.index a{text-decoration:none;color:var(--fg)}
+.index a:hover{text-decoration:underline}
+.end .cover-inner{margin-block:auto}
+.line{font-family:var(--display);font-weight:800;font-size:clamp(26px,2.6vw,36px);letter-spacing:-.02em;margin:0 0 24px;max-width:none}
+.contact{list-style:none;padding:0;margin:0;display:grid;gap:8px;text-align:left}
+.contact li{display:grid;grid-template-columns:110px auto;gap:12px}
+.contact .k{color:var(--muted);font-size:14px;text-transform:uppercase;letter-spacing:.12em;padding-top:3px}
+.contact .v{user-select:all}
+
+@media (max-width:820px){
+  .topbar,.bottombar,.slide{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  .slide{min-height:auto;padding-block:96px 72px;justify-content:flex-start}
+  .cover,.end{min-height:100svh}
+  .side.text-left,.side.text-right,.pair{grid-template-columns:1fr}
+  .side.text-right .side-media{order:-1}
+  .bottombar .doc{display:none}
+  .next .t{display:none}
+  .topbar .where{font-size:13px}
+  body{font-size:17px}
+}
+</style>
+
+</head><body>
+<header class="topbar">
+  <a class="home" href="#cover" aria-label="Back to the cover"><svg class="lockup" viewBox="0 0 286 46" role="img" aria-label="infograf/ai" fill="currentColor"><g>
+    <path d="M66.18,19.15c0-.56.45-.97.99-.97s1.02.43,1.02.97-.45.97-1.02.97-.99-.41-.99-.97ZM67.9,32.68h-1.45v-9.8h1.45v9.8ZM266.19,19.15c0-.56.45-.97.99-.97s1.02.43,1.02.97-.45.97-1.02.97-.99-.41-.99-.97ZM267.9,32.68h-1.45v-9.8h1.45v9.8ZM89.47,27.02v5.65h-1.45v-5.58c0-2.04-1.21-3.2-2.99-3.2-1.25,0-2.53.65-3.38,1.82v6.97h-1.45v-9.8h1.45v1.17c.91-.93,2.19-1.49,3.63-1.49,2.46,0,4.18,1.72,4.18,4.48h0v-.02ZM109.74,22.87v1.25h-3.95v8.56h-1.45v-8.56h-2.87v-1.25h2.87v-2.57c0-2.23,1.4-3.7,3.48-3.7.57,0,1.32.09,2.04.3l-.24,1.25c-.53-.13-1.15-.22-1.55-.22-1.38,0-2.29.93-2.29,2.36v2.57h3.95,0ZM132.32,27.77c0,2.95-2.27,5.22-5.2,5.22s-5.22-2.27-5.22-5.22,2.27-5.16,5.22-5.16,5.2,2.25,5.2,5.16ZM130.87,27.77c0-2.1-1.62-3.83-3.76-3.83s-3.76,1.72-3.76,3.83,1.62,3.91,3.76,3.91,3.76-1.73,3.76-3.91ZM154.42,33c0,2.94-1.97,4.84-4.88,4.84-2.57,0-4.5-1.51-4.84-3.65h1.49c.3,1.38,1.57,2.31,3.35,2.31,2.04,0,3.42-1.34,3.42-3.5h.02v-1.72c-.93.87-2.21,1.4-3.7,1.4-2.81,0-4.95-2.29-4.95-5.04,0-2.91,2.14-5.12,4.95-5.12,1.49,0,2.76.53,3.7,1.4v-1.06h1.45v10.13h0ZM152.98,29.56v-3.91c-.85-1.25-2.14-1.84-3.5-1.84-2.15,0-3.67,1.71-3.67,3.85,0,1.97,1.53,3.76,3.67,3.76,1.36,0,2.66-.59,3.5-1.84h0ZM167.89,24.57c.91-1.23,2.25-1.95,3.85-1.95v1.38c-1.62.04-2.97.85-3.85,2.27v6.41h-1.45v-9.8h1.45v1.71h0ZM193.8,32.68h-1.45v-1.08c-.89.85-2.08,1.36-3.55,1.36-2.81,0-5.08-2.29-5.08-5.18s2.27-5.16,5.08-5.16c1.47,0,2.66.51,3.55,1.36v-1.1h1.45v9.8h0ZM192.36,29.89v-4.22c-.82-1.19-2.01-1.78-3.35-1.78-2.17,0-3.8,1.78-3.8,3.89s1.64,3.91,3.8,3.91c1.34,0,2.53-.59,3.35-1.78h0ZM252.15,32.68h-1.45v-1.08c-.89.85-2.08,1.36-3.55,1.36-2.81,0-5.08-2.29-5.08-5.18s2.27-5.16,5.08-5.16c1.47,0,2.66.51,3.55,1.36v-1.1h1.45v9.8h0ZM250.71,29.89v-4.22c-.82-1.19-2.01-1.78-3.35-1.78-2.17,0-3.8,1.78-3.8,3.89s1.64,3.91,3.8,3.91c1.34,0,2.53-.59,3.35-1.78h0ZM210.14,22.87v-2.06c0-1.84,1.02-2.87,2.62-2.87,1.27,0,1.95.24,2.99.51l.3-1.23c-1.32-.39-2.01-.61-3.44-.61-2.29,0-3.91,1.57-3.91,4.2v2.06h-2.87v1.25h2.87v8.56h1.45v-8.56h4.14v-1.25h-4.15Z"/>
+    <rect x="224.19" y="23.95" width="21.1" height="1.45" transform="translate(105.56 222.22) rotate(-62.82)"/>
+  </g>
+  <g>
+    <path d="M32.25,24.68l-10.16,16.9h-10.58c2.86-5.03,12.9-21.5,15.58-26.15l4.36,7.82h0s.8,1.43.8,1.43Z"/>
+    <path d="M37.49,38.08c-.3.92-.81,1.61-1.58,2.18-.78.57-1.6.83-2.56.83s-1.78-.27-2.56-.83c-.78-.57-1.29-1.26-1.58-2.18-.3-.92-.3-1.78,0-2.7l4.15,1.35-2.56-3.53c.78-.57,1.6-.83,2.56-.83s1.78.27,2.56.83c.78.57,1.29,1.26,1.58,2.18.3.92.3,1.78,0,2.7Z"/>
+    <path d="M51.49,41.03c-2.95,1.61-6.73.66-8.44-2.11l-8.41-14.46h0s-6.25-11.22-6.25-11.22l5.18-8.69c1.63,2.78,10.35,18.13,13.17,23.11,3.5,6,7.34,11.97,7.34,11.97l-2.59,1.42Z"/>
+  </g></svg></a>
+  <span class="where" id="where">Intro</span>
+</header>
+
+<main>
+<section class="slide cover" id="cover" data-group="Intro" data-title="Cover">
+  <div class="cover-inner">
+    <svg class="stacked" viewBox="0 0 286 127.81" role="img" aria-label="infograf/ai" fill="currentColor"><g>
+    <path d="M45.47,102.89c0-.56.45-.97.99-.97s1.02.43,1.02.97-.45.97-1.02.97-.99-.41-.99-.97ZM47.18,116.42h-1.45v-9.8h1.45v9.8ZM245.47,102.89c0-.56.45-.97.99-.97s1.02.43,1.02.97-.45.97-1.02.97-.99-.41-.99-.97ZM247.19,116.42h-1.45v-9.8h1.45v9.8ZM68.75,110.77v5.65h-1.45v-5.58c0-2.04-1.21-3.2-2.99-3.2-1.25,0-2.53.65-3.38,1.82v6.97h-1.45v-9.8h1.45v1.17c.91-.93,2.19-1.49,3.63-1.49,2.46,0,4.18,1.72,4.18,4.48h0v-.02ZM89.03,106.61v1.25h-3.95v8.56h-1.45v-8.56h-2.87v-1.25h2.87v-2.57c0-2.23,1.4-3.7,3.48-3.7.57,0,1.32.09,2.04.3l-.24,1.25c-.53-.13-1.15-.22-1.55-.22-1.38,0-2.29.93-2.29,2.36v2.57h3.95,0ZM111.6,111.51c0,2.95-2.27,5.22-5.2,5.22s-5.22-2.27-5.22-5.22,2.27-5.16,5.22-5.16,5.2,2.25,5.2,5.16ZM110.15,111.51c0-2.1-1.62-3.83-3.76-3.83s-3.76,1.72-3.76,3.83,1.62,3.91,3.76,3.91,3.76-1.73,3.76-3.91ZM133.71,116.74c0,2.94-1.97,4.84-4.88,4.84-2.57,0-4.5-1.51-4.84-3.65h1.49c.3,1.38,1.57,2.31,3.35,2.31,2.04,0,3.42-1.34,3.42-3.5h.02v-1.72c-.93.87-2.21,1.4-3.7,1.4-2.81,0-4.95-2.29-4.95-5.04,0-2.91,2.14-5.12,4.95-5.12,1.49,0,2.76.53,3.7,1.4v-1.06h1.45v10.13h0ZM132.26,113.3v-3.91c-.85-1.25-2.14-1.84-3.5-1.84-2.15,0-3.67,1.71-3.67,3.85,0,1.97,1.53,3.76,3.67,3.76,1.36,0,2.66-.59,3.5-1.84h0ZM147.17,108.31c.91-1.23,2.25-1.95,3.85-1.95v1.38c-1.62.04-2.97.85-3.85,2.27v6.41h-1.45v-9.8h1.45v1.71h0ZM173.09,116.42h-1.45v-1.08c-.89.85-2.08,1.36-3.55,1.36-2.81,0-5.08-2.29-5.08-5.18s2.27-5.16,5.08-5.16c1.47,0,2.66.51,3.55,1.36v-1.1h1.45v9.8h0ZM171.65,113.63v-4.22c-.82-1.19-2.01-1.78-3.35-1.78-2.17,0-3.8,1.78-3.8,3.89s1.64,3.91,3.8,3.91c1.34,0,2.53-.59,3.35-1.78h0ZM231.44,116.42h-1.45v-1.08c-.89.85-2.08,1.36-3.55,1.36-2.81,0-5.08-2.29-5.08-5.18s2.27-5.16,5.08-5.16c1.47,0,2.66.51,3.55,1.36v-1.1h1.45v9.8h0ZM230,113.63v-4.22c-.82-1.19-2.01-1.78-3.35-1.78-2.17,0-3.8,1.78-3.8,3.89s1.64,3.91,3.8,3.91c1.34,0,2.53-.59,3.35-1.78h0ZM189.42,106.61v-2.06c0-1.84,1.02-2.87,2.62-2.87,1.27,0,1.95.24,2.99.51l.3-1.23c-1.32-.39-2.01-.61-3.44-.61-2.29,0-3.91,1.57-3.91,4.2v2.06h-2.87v1.25h2.87v8.56h1.45v-8.56h4.14v-1.25h-4.15Z"/>
+    <rect x="203.47" y="107.69" width="21.1" height="1.45" transform="translate(19.82 249.28) rotate(-62.82)"/>
+  </g>
+  <g>
+    <path d="M139.71,48.1l-21.12,35.13h-22c5.95-10.45,26.82-44.7,32.41-54.38l9.06,16.27h0s1.66,2.98,1.66,2.98Z"/>
+    <path d="M150.62,75.97c-.62,1.91-1.67,3.36-3.3,4.54-1.62,1.18-3.33,1.73-5.33,1.73s-3.71-.55-5.33-1.73c-1.62-1.18-2.68-2.63-3.3-4.54-.62-1.91-.62-3.7,0-5.61l8.63,2.8-5.33-7.34c1.62-1.18,3.33-1.73,5.33-1.73s3.71.55,5.33,1.73c1.62,1.18,2.68,2.63,3.3,4.54.62,1.91.62,3.7,0,5.61Z"/>
+    <path d="M179.72,82.11c-6.13,3.35-13.99,1.38-17.54-4.39l-17.49-30.08h0s-12.99-23.33-12.99-23.33l10.77-18.07c3.4,5.79,21.52,37.7,27.39,48.05,7.28,12.48,15.26,24.88,15.26,24.88l-5.4,2.94Z"/>
+  </g></svg>
+    <h1>infograf/ai Brand Book</h1>
+    <p class="sub">A speculative brand world, directed with AI · ELVTR Final Project</p>
+    <p class="by">Nick George · October 2026</p>
+  </div>
+  <nav class="index" aria-label="Sections"><a href="#strategy-the-market-gap">Strategy</a> <span aria-hidden="true">|</span> <a href="#visual-world-the-brand-scaffold">Visual world</a> <span aria-hidden="true">|</span> <a href="#system-logic-the-engine-and-master-prompts">System logic</a> <span aria-hidden="true">|</span> <a href="#governance-a-scored-prompt-with-a-fix-loop">Governance</a> <span aria-hidden="true">|</span> <a href="#how-it-was-done-the-director">How it was done</a></nav>
+</section>
+<section class="slide" id="strategy-the-market-gap" data-group="Strategy" data-title="The market gap">
+  <header class="slide-head"><p class="eyebrow">Strategy</p><h2>The market gap</h2></header>
+  <div class="slide-body">
+<div class="cols cards">
+<div class="card"><span class="num">01</span><h3>Everyone has the models</h3><p>Access to generative AI is no longer an edge. Any studio can type a prompt, and soon every client can too.</p></div>
+<div class="card"><span class="num">02</span><h3>Most AI film looks generated</h3><p>Neon, glow and generic robots. Work that no brand owns, made with no visible direction behind it.</p></div>
+<div class="card"><span class="num">03</span><h3>Comms teams need a director</h3><p>Enterprise and government teams want higher-craft film, animation, social and digital work, with the rigour and governance they already expect.</p></div>
+</div>
+  </div>
+</section>
+<section class="slide" id="strategy-the-brand-seed" data-group="Strategy" data-title="The brand seed">
+  <header class="slide-head"><p class="eyebrow">Strategy</p><h2>The brand seed</h2></header>
+  <div class="slide-body">
+<div class="cols two">
+<div class="col"><p class="statement">Direction, Not Generation.</p>
+<p>AI is the production capability. Creative direction is the product.</p>
+<p>infograf/ai is the AI-directed division of Infografia. It takes 15 years of art direction experience and extends those skills and capabilities with AI, directing generative tools the way a director of photography directs a camera.</p>
+<p>Capability leads. Speed and cost are the proof, never the pitch.</p></div>
+<div class="col"><h3>One visual style</h3>
+<p>Matte white ceramic and embossed relief, in greyscale, with a single gloss accent: the visor. Shown in two tones, light and dark.</p>
+<h3>Rejected looks</h3>
+<p>Generic AI robots, neon and cyberpunk, glowing circuitry, gradient blobs and AI sparkle.</p>
+<h3>Why</h3>
+<p>These are the clichés that stand in for “AI”. The brand shows a director instead.</p></div>
+</div>
+  </div>
+</section>
+<section class="slide" id="strategy-the-core-audience" data-group="Strategy" data-title="The core audience">
+  <header class="slide-head"><p class="eyebrow">Strategy</p><h2>The core audience</h2></header>
+  <div class="slide-body">
+<div class="cols two">
+<div class="col"><h3>One audience</h3>
+<p>Communications teams in enterprise and government: transport, health, science and infrastructure.</p>
+<p>They already trust Infografia&#x27;s craft. They do not need convincing that AI is legitimate. They need the same bar, delivered faster, with clear answers on governance, copyright and sourcing.</p>
+<p>Message blend: 80 percent capability, 20 percent cost and speed.</p></div>
+<div class="col"><h3>One category, one service</h3>
+<p>Category: AI-directed creative production.</p>
+<p>Service: AI creative direction, for any design output. Film, animation, social and digital are where it shows up, not separate services.</p>
+<h3>Not for</h3>
+<p>Clients who want cheap, fast AI content with no direction involved. That is the commoditised end of the market the brand is positioned against.</p>
+<h3>What they buy</h3>
+<p>15 years of art direction, a visible process and a governed system.</p></div>
+</div>
+  </div>
+</section>
+<section class="slide" id="visual-world-the-brand-scaffold" data-group="Visual world" data-title="The brand scaffold">
+  <header class="slide-head"><p class="eyebrow">Visual world</p><h2>The brand scaffold</h2></header>
+  <div class="slide-body">
+<figure class="plate"><img src="img/s01.jpg" width="2200" height="971" alt="The brand scaffold" loading="lazy"></figure>
+<div class="caption-row">
+<div class="caption"><p>Everything in the visual world is built on six verbal files. One idea runs through both tiers.</p></div>
+</div>
+  </div>
+</section>
+<section class="slide" id="visual-world-the-director" data-group="Visual world" data-title="The Director">
+  <header class="slide-head"><p class="eyebrow">Visual world</p><h2>The Director</h2></header>
+  <div class="slide-body">
+<div class="lead"><p>The hero of the brand. A futurist avatar of us as directors, built from the founder&#x27;s likeness. The human is still in the chair; the visor is the viewfinder. Matte everywhere, with gloss on the visor only.</p></div>
+<figure class="plate"><img src="img/s02.jpg" width="2200" height="690" alt="The Director" loading="lazy"></figure>
+  </div>
+</section>
+<section class="slide" id="visual-world-the-poster-system-all-formats" data-group="Visual world" data-title="The poster system, all formats">
+  <header class="slide-head"><p class="eyebrow">Visual world</p><h2>The poster system, all formats</h2></header>
+  <div class="slide-body">
+<figure class="plate"><img src="img/s03.jpg" width="2200" height="773" alt="The poster system, all formats" loading="lazy"></figure>
+<div class="caption-row">
+<div class="caption"><p>One headline system, three ratios, two tones. Headline in Hanken Grotesk, support in Abel. Page #FFFFFF or #0B0B0D. The image is generated; the page is levelled and the type and logo are set with real fonts.</p></div>
+</div>
+  </div>
+</section>
+<section class="slide" id="visual-world-the-mark" data-group="Visual world" data-title="The mark">
+  <header class="slide-head"><p class="eyebrow">Visual world</p><h2>The mark</h2></header>
+  <div class="slide-body">
+<figure class="plate"><img src="img/s05.jpg" width="2200" height="957" alt="The mark" loading="lazy"></figure>
+<div class="caption-row">
+<div class="caption"><p>A crossbar-less A with a dial at its base and a slice cut out as the pointer, paired with the infograf/ai wordmark. Pressed in light grey on the white home, light on dark pages.</p></div>
+</div>
+  </div>
+</section>
+<section class="slide" id="visual-world-the-website-the-home" data-group="Visual world" data-title="The website, the home">
+  <header class="slide-head"><p class="eyebrow">Visual world</p><h2>The website, the home</h2></header>
+  <div class="slide-body">
+<figure class="plate"><img src="img/s06.jpg" width="2200" height="934" alt="The website, the home" loading="lazy"></figure>
+<div class="caption-row">
+<div class="caption"><p>A white moulded control panel. The words beside the dial are the outputs: Social, Film, Animation, Digital. Clicking the ring turns to the next; dots on the ring pick a project, and the lens shows it. Working prototype: <a href="https://infograf-ai.netlify.app" target="_blank" rel="noopener">infograf-ai.netlify.app</a></p></div>
+<a class="qr" href="https://infograf-ai.netlify.app" target="_blank" rel="noopener"><img src="img/qr.png" width="120" height="120" alt="QR code for infograf-ai.netlify.app"><span>Scan for the live site</span></a>
+</div>
+  </div>
+</section>
+<section class="slide" id="visual-world-the-website-inside" data-group="Visual world" data-title="The website, inside">
+  <header class="slide-head"><p class="eyebrow">Visual world</p><h2>The website, inside</h2></header>
+  <div class="slide-body">
+<figure class="plate"><img src="img/s07.jpg" width="2200" height="991" alt="The website, inside" loading="lazy"></figure>
+<div class="caption-row">
+<div class="caption"><p>Every menu item opens through the lens in about 1.2 seconds. Each section is one scrolling page of projects, in the same dark system as the posters.</p></div>
+</div>
+  </div>
+</section>
+<section class="slide" id="visual-world-the-cinematic-trailer" data-group="Visual world" data-title="The cinematic trailer">
+  <header class="slide-head"><p class="eyebrow">Visual world</p><h2>The cinematic trailer</h2></header>
+  <div class="slide-body">
+<figure class="film hero"><video id="trailer" src="trailer.mp4" poster="img/trailer_poster.jpg" muted loop playsinline preload="auto" width="1920" height="1080" aria-label="infograf/ai trailer, 25-second preview"></video>
+<button class="sound" id="sound" type="button" aria-pressed="false"><span id="soundT">Sound on</span></button></figure>
+<div class="cols n3">
+<div class="col"><h3>“Infografia, enhance_”</h3><p>The brand&#x27;s summary piece, shown here as a 25-second preview. The Director is studied piece by piece in the dark: hair, relief, cables, the visor. Then the world turns white.</p></div>
+<div class="col"><h3>Supers</h3><p>Infografia, enhance. Fifteen years of craft. Film, design, motion. Now directed. Every frame directed. The Director.</p></div>
+<div class="col"><h3>How it was made</h3><p>A storyboard and animatic first, then an approved start frame for every shot before any motion. The titles decode in over each shot, set in the clear side of the frame.</p></div>
+</div>
+  </div>
+</section>
+<section class="slide" id="system-logic-the-engine-and-master-prompts" data-group="System logic" data-title="The engine and master prompts">
+  <header class="slide-head"><p class="eyebrow">System logic</p><h2>The engine and master prompts</h2></header>
+  <div class="slide-body">
+<figure class="plate"><img src="img/s08.jpg" width="2200" height="586" alt="The engine and master prompts" loading="lazy"></figure>
+<div class="cols n2">
+<div class="col"><h3>Master prompt: reflow</h3>
+<p>“Reflow [master poster] into a [ratio] layout. Keep the same design system exactly: page colour, type, weights, character, logo and the same words with the same spelling. New arrangement: [rules for that ratio]. Only the visor is glossy; all other surfaces are matte.”</p></div>
+<div class="col"><h3>References and node workflow</h3>
+<p>The character sheet, head sheet and master poster are attached to every prompt, never re-described.</p>
+<p>The six brand bible files are joined in Fuser and passed to an LLM, which writes the art-direction prompt.</p>
+<p>Every prompt edits an approved image. Generated type is a layout guide only.</p></div>
+</div>
+  </div>
+</section>
+<section class="slide" id="governance-a-scored-prompt-with-a-fix-loop" data-group="Governance" data-title="A scored prompt with a fix loop">
+  <header class="slide-head"><p class="eyebrow">Governance</p><h2>A scored prompt with a fix loop</h2></header>
+  <div class="slide-body">
+<div class="side text-right"><div class="side-media"><div class="pairs">
+<figure class="pair"><img src="img/s09.jpg" width="2200" height="1237" alt="Before render" loading="lazy"><figcaption><strong>Before</strong> First 16:9 dark render, as generated. <span class="score">84, FIX</span></figcaption></figure>
+<figure class="pair"><img src="img/s10.jpg" width="2200" height="1237" alt="After render" loading="lazy"><figcaption><strong>After</strong> Re-rendered matte, page levelled, type and logo set with real fonts. <span class="score">91.5, PASS</span></figcaption></figure>
+</div></div><div class="side-text"><h3>The prompt scores seven criteria against the master</h3>
+<p>Character identity (20): 90, then 90.</p>
+<p>Surface finish (15): 55, then 85. Gloss on the neck removed.</p>
+<p>Tone (10): 85, then 95. Page levelled to #0B0B0D.</p>
+<p>Typography (20): 95, then 95. Now set, not drawn.</p>
+<p>Logo (10): 90, then 90.</p>
+<p>Layout for ratio (15): 95, then 95.</p>
+<p>Protected zone (10): 70, then 90. Label moved clear of the beard.</p>
+<h3>Rules of the report</h3>
+<p>Each score comes with a confidence level and one line of visible evidence.</p>
+<p>PASS at 85, FIX from 60 to 84, FAIL below 60. Any criterion under 50 caps the verdict at FIX.</p>
+<p>The top three fixes are written as prompt instructions.</p>
+<h3>Where it lives</h3>
+<p>The prompt and the full skill (character, tone, type, logo and layout per ratio) are in github.com/infografiaco/InfografiaAI, under agent/visual. Scored here by Claude.</p></div></div>
+  </div>
+</section>
+<section class="slide" id="how-it-was-done-the-director" data-group="How it was done" data-title="The Director">
+  <header class="slide-head"><p class="eyebrow">How it was done</p><h2>The Director</h2></header>
+  <div class="slide-body">
+<figure class="plate"><img src="img/s11.jpg" width="2200" height="1016" alt="The Director" loading="lazy"></figure>
+<div class="cols n3">
+<div class="col"><h3>Thought process</h3>
+<p>Decision: an avatar of us as directors, from my own likeness, not a generic robot.</p>
+<p>Broke: muscle and abs on the body, toy-like joints, relief too uniform, gloss everywhere.</p>
+<p>Fix: machine armour, cable joints, relief in three scales, then the matte rule.</p></div>
+<div class="col"><h3>Work process</h3>
+<p>Midjourney references set the surface. A first pass in Seedream, then my likeness with glasses.</p>
+<p>The glasses became cyber eyes, then a shell, then the visor. Body and relief refined on character sheets.</p>
+<p>146 generations. 1 character sheet and 1 head sheet kept.</p></div>
+<div class="col"><h3>Tool selection</h3>
+<p>Midjourney for references only.</p>
+<p>GPT Image 2 held the character across edits.</p>
+<p>Nano Banana Pro made the most faithful head sheet. Seedream 4.5 was used for the first pass only.</p></div>
+</div>
+  </div>
+</section>
+<section class="slide" id="how-it-was-done-the-posters" data-group="How it was done" data-title="The posters">
+  <header class="slide-head"><p class="eyebrow">How it was done</p><h2>The posters</h2></header>
+  <div class="slide-body">
+<figure class="plate"><img src="img/s12.jpg" width="2200" height="388" alt="The posters" loading="lazy"></figure>
+<div class="cols n3">
+<div class="col"><h3>Thought process</h3>
+<p>Decision: one headline system in two tones, reflowed across ratios.</p>
+<p>Broke: misspelt labels, type over the face, boxes behind the figure, a different white and black on every render.</p>
+<p>Fix: protected zone and flat page rules, the page levelled, type and logo set with real fonts.</p></div>
+<div class="col"><h3>Work process</h3>
+<p>A data-grid layout came first, then the headline system replaced it.</p>
+<p>The 3:4 master was reflowed to 16:9, 21:9 and 9:16, then re-rendered matte.</p>
+<p>About 60 layouts. 6 masters and 2 social frames kept.</p></div>
+<div class="col"><h3>Tool selection</h3>
+<p>GPT Image 2 lays out a poster from a reference.</p>
+<p>Models cannot hold a font or a colour value, so Claude levelled the page and set the type in code.</p>
+<p>Hanken Grotesk and Abel.</p></div>
+</div>
+  </div>
+</section>
+<section class="slide" id="how-it-was-done-the-logo" data-group="How it was done" data-title="The logo">
+  <header class="slide-head"><p class="eyebrow">How it was done</p><h2>The logo</h2></header>
+  <div class="slide-body">
+<figure class="plate"><img src="img/s13.jpg" width="2200" height="373" alt="The logo" loading="lazy"></figure>
+<div class="cols n3">
+<div class="col"><h3>Thought process</h3>
+<p>Decision: material, not effect. A crossbar-less A, kept from the first round.</p>
+<p>The IΛI mark from Assignment 3 held the relief idea. Building the website&#x27;s dial suggested a stronger one: put the dial into the A.</p>
+<p>A blue pointer was tested and removed; the slice now stays cut out.</p></div>
+<div class="col"><h3>Work process</h3>
+<p>26 variations generated from the brand bible through Fuser.</p>
+<p>IΛI chosen and redrawn as vector for Assignment 3.</p>
+<p>The new mark was drawn from the dial: an A with a dial at its base and a slice cut out as the pointer. Refined in Illustrator.</p></div>
+<div class="col"><h3>Tool selection</h3>
+<p>Fuser and an LLM for the art-direction prompt; image models for range.</p>
+<p>Illustrator for the final, because a logo has to be exact.</p>
+<p>The website shaped the logo: the dial came first.</p></div>
+</div>
+  </div>
+</section>
+<section class="slide" id="how-it-was-done-the-website" data-group="How it was done" data-title="The website">
+  <header class="slide-head"><p class="eyebrow">How it was done</p><h2>The website</h2></header>
+  <div class="slide-body">
+<figure class="plate"><img src="img/s14.jpg" width="2200" height="496" alt="The website" loading="lazy"></figure>
+<div class="cols n3">
+<div class="col"><h3>Thought process</h3>
+<p>Decision: one dial as the director&#x27;s control, and the lens as the way into every page.</p>
+<p>Tried and dropped: a white header bar, which vanished during the lens opening; the lens image zooming into the page, which landed off-register; a fixed square panel; a 10px menu.</p>
+<p>Fixes: a straight fade through black, a panel that follows the window, a 12.5px menu.</p></div>
+<div class="col"><h3>Work process</h3>
+<p>30 homepage mockups generated in Assignment 3; 2 kept as the starting point.</p>
+<p>Then built as a working prototype: the dial, the dots, the lens opening, project pages, play view, Direction, Services, Journal and a seven-step brief.</p>
+<p>Next: the phone layout, the remaining projects and the real build.</p></div>
+<div class="col"><h3>Tool selection</h3>
+<p>Seedream 4.5, Gemini Image, GPT Image and FLUX.2 for the first mockups.</p>
+<p>Claude built the working prototype in code from the approved stills.</p>
+<p>Hosted on Netlify as a preview.</p></div>
+</div>
+  </div>
+</section>
+<section class="slide" id="how-it-was-done-the-trailer" data-group="How it was done" data-title="The trailer">
+  <header class="slide-head"><p class="eyebrow">How it was done</p><h2>The trailer</h2></header>
+  <div class="slide-body">
+<figure class="plate"><img src="img/s15.jpg" width="2200" height="304" alt="Trailer development: the node network, the face rising from liquid, the open hand in the dark, and a kinetic-type test frame" loading="lazy"></figure>
+<div class="cols n3">
+<div class="col"><h3>Thought process</h3>
+<p>Decision: study the Director piece by piece in the dark, then let the open hand turn the world white. He walks away into it on the brand line.</p>
+<p>Broke: the first 90-second particle and fluid build was too much for AI video. Threads came out static, with glow and sparkle. In the kinetic-type tests, words were lost behind the figure.</p>
+<p>Fix: a shorter, simpler story, built from approved stills. The titles were set with real fonts in the clear side of every frame.</p></div>
+<div class="col"><h3>Work process</h3>
+<p>A 40-frame storyboard and animatic came first. Then every start frame was made from the character sheet and approved before any motion.</p>
+<p>One shot per clip, each from its start frame. A background cutout was made for the shots where type sits behind him.</p>
+<p>Three cuts were tested: a camera-data HUD edit, a bold white kinetic edit, and the final, with titles decoding in Abel over a piano score. About 60 stills and 15 clips.</p></div>
+<div class="col"><h3>Tool selection</h3>
+<p>GPT Image 2 for start frames, with the character sheet as the first reference on every frame.</p>
+<p>Seedance 2.5 for motion. Higgsfield's background remover for the masks. ElevenLabs for the score.</p>
+<p>Claude assembled the edit, titles and graphics in code in Higgsfield's Katana workflow, so the type stays exact.</p></div>
+</div>
+  </div>
+</section>
+<section class="slide end" id="contact" data-group="Contact" data-title="Contact">
+  <div class="cover-inner">
+    <svg class="stacked" viewBox="0 0 286 127.81" role="img" aria-label="infograf/ai" fill="currentColor"><g>
+    <path d="M45.47,102.89c0-.56.45-.97.99-.97s1.02.43,1.02.97-.45.97-1.02.97-.99-.41-.99-.97ZM47.18,116.42h-1.45v-9.8h1.45v9.8ZM245.47,102.89c0-.56.45-.97.99-.97s1.02.43,1.02.97-.45.97-1.02.97-.99-.41-.99-.97ZM247.19,116.42h-1.45v-9.8h1.45v9.8ZM68.75,110.77v5.65h-1.45v-5.58c0-2.04-1.21-3.2-2.99-3.2-1.25,0-2.53.65-3.38,1.82v6.97h-1.45v-9.8h1.45v1.17c.91-.93,2.19-1.49,3.63-1.49,2.46,0,4.18,1.72,4.18,4.48h0v-.02ZM89.03,106.61v1.25h-3.95v8.56h-1.45v-8.56h-2.87v-1.25h2.87v-2.57c0-2.23,1.4-3.7,3.48-3.7.57,0,1.32.09,2.04.3l-.24,1.25c-.53-.13-1.15-.22-1.55-.22-1.38,0-2.29.93-2.29,2.36v2.57h3.95,0ZM111.6,111.51c0,2.95-2.27,5.22-5.2,5.22s-5.22-2.27-5.22-5.22,2.27-5.16,5.22-5.16,5.2,2.25,5.2,5.16ZM110.15,111.51c0-2.1-1.62-3.83-3.76-3.83s-3.76,1.72-3.76,3.83,1.62,3.91,3.76,3.91,3.76-1.73,3.76-3.91ZM133.71,116.74c0,2.94-1.97,4.84-4.88,4.84-2.57,0-4.5-1.51-4.84-3.65h1.49c.3,1.38,1.57,2.31,3.35,2.31,2.04,0,3.42-1.34,3.42-3.5h.02v-1.72c-.93.87-2.21,1.4-3.7,1.4-2.81,0-4.95-2.29-4.95-5.04,0-2.91,2.14-5.12,4.95-5.12,1.49,0,2.76.53,3.7,1.4v-1.06h1.45v10.13h0ZM132.26,113.3v-3.91c-.85-1.25-2.14-1.84-3.5-1.84-2.15,0-3.67,1.71-3.67,3.85,0,1.97,1.53,3.76,3.67,3.76,1.36,0,2.66-.59,3.5-1.84h0ZM147.17,108.31c.91-1.23,2.25-1.95,3.85-1.95v1.38c-1.62.04-2.97.85-3.85,2.27v6.41h-1.45v-9.8h1.45v1.71h0ZM173.09,116.42h-1.45v-1.08c-.89.85-2.08,1.36-3.55,1.36-2.81,0-5.08-2.29-5.08-5.18s2.27-5.16,5.08-5.16c1.47,0,2.66.51,3.55,1.36v-1.1h1.45v9.8h0ZM171.65,113.63v-4.22c-.82-1.19-2.01-1.78-3.35-1.78-2.17,0-3.8,1.78-3.8,3.89s1.64,3.91,3.8,3.91c1.34,0,2.53-.59,3.35-1.78h0ZM231.44,116.42h-1.45v-1.08c-.89.85-2.08,1.36-3.55,1.36-2.81,0-5.08-2.29-5.08-5.18s2.27-5.16,5.08-5.16c1.47,0,2.66.51,3.55,1.36v-1.1h1.45v9.8h0ZM230,113.63v-4.22c-.82-1.19-2.01-1.78-3.35-1.78-2.17,0-3.8,1.78-3.8,3.89s1.64,3.91,3.8,3.91c1.34,0,2.53-.59,3.35-1.78h0ZM189.42,106.61v-2.06c0-1.84,1.02-2.87,2.62-2.87,1.27,0,1.95.24,2.99.51l.3-1.23c-1.32-.39-2.01-.61-3.44-.61-2.29,0-3.91,1.57-3.91,4.2v2.06h-2.87v1.25h2.87v8.56h1.45v-8.56h4.14v-1.25h-4.15Z"/>
+    <rect x="203.47" y="107.69" width="21.1" height="1.45" transform="translate(19.82 249.28) rotate(-62.82)"/>
+  </g>
+  <g>
+    <path d="M139.71,48.1l-21.12,35.13h-22c5.95-10.45,26.82-44.7,32.41-54.38l9.06,16.27h0s1.66,2.98,1.66,2.98Z"/>
+    <path d="M150.62,75.97c-.62,1.91-1.67,3.36-3.3,4.54-1.62,1.18-3.33,1.73-5.33,1.73s-3.71-.55-5.33-1.73c-1.62-1.18-2.68-2.63-3.3-4.54-.62-1.91-.62-3.7,0-5.61l8.63,2.8-5.33-7.34c1.62-1.18,3.33-1.73,5.33-1.73s3.71.55,5.33,1.73c1.62,1.18,2.68,2.63,3.3,4.54.62,1.91.62,3.7,0,5.61Z"/>
+    <path d="M179.72,82.11c-6.13,3.35-13.99,1.38-17.54-4.39l-17.49-30.08h0s-12.99-23.33-12.99-23.33l10.77-18.07c3.4,5.79,21.52,37.7,27.39,48.05,7.28,12.48,15.26,24.88,15.26,24.88l-5.4,2.94Z"/>
+  </g></svg>
+    <p class="line">Direction, Not Generation.</p>
+    <ul class="contact">
+      <li><span class="k">Email</span> <span class="v" >nick@infografia.co</span></li>
+      <li><span class="k">Phone</span> <span class="v">+61 418 481 527</span></li>
+      <li><span class="k">Web</span> <a class="v" href="https://www.infografia.co" target="_blank" rel="noopener">www.infografia.co</a></li>
+      <li><span class="k">Prototype</span> <a class="v" href="https://infograf-ai.netlify.app" target="_blank" rel="noopener">infograf-ai.netlify.app</a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="bottombar">
+  <span class="doc">infograf/ai Brand Book</span>
+  <div class="ctrls">
+    <span class="count"><span id="cur">01</span> / 19</span>
+    <button class="up" id="up" type="button" aria-label="Previous section"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 13V3M3.5 7.5 8 3l4.5 4.5"/></svg></button>
+    <button class="next" id="next" type="button"><b>Next</b><span class="t" id="nextT"></span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></button>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var slides=[].slice.call(document.querySelectorAll('.slide'));
+  var cur=0, where=document.getElementById('where'), curEl=document.getElementById('cur'), nextT=document.getElementById('nextT'), nextB=document.getElementById('next');
+  function pad(n){return (n<10?'0':'')+n}
+  function set(i){
+    cur=i; var s=slides[i];
+    where.textContent=s.dataset.group;
+    curEl.textContent=pad(i+1);
+    var n=slides[i+1];
+    if(n){nextB.querySelector('b').textContent='Next';nextT.textContent=' · '+(n.dataset.group===s.dataset.group||n.dataset.group==='Contact'?'':n.dataset.group+': ')+n.dataset.title;}
+    else{nextB.querySelector('b').textContent='Back to the cover';nextT.textContent='';}
+  }
+  function go(i){i=Math.max(0,Math.min(slides.length-1,i));slides[i].scrollIntoView({block:'start'});}
+  function locate(){
+    var mid=window.innerHeight*0.4, best=0;
+    slides.forEach(function(s,i){if(s.getBoundingClientRect().top<=mid)best=i;});
+    if(best!==cur)set(best);
+  }
+  document.getElementById('up').addEventListener('click',function(){go(cur-1)});
+  nextB.addEventListener('click',function(){go(cur+1>=slides.length?0:cur+1)});
+  document.addEventListener('keydown',function(e){
+    if(e.target.closest&&e.target.closest('input,textarea'))return;
+    if(e.key==='ArrowDown'||e.key==='PageDown'){e.preventDefault();go(cur+1)}
+    if(e.key==='ArrowUp'||e.key==='PageUp'){e.preventDefault();go(cur-1)}
+  });
+  window.addEventListener('scroll',locate,{passive:true});
+  window.addEventListener('resize',locate);
+  set(0);locate();
+})();
+
+(function(){
+  var v=document.getElementById('trailer'), b=document.getElementById('sound'), t=document.getElementById('soundT');
+  if(!v)return;
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function play(){var p=v.play();if(p&&p.catch)p.catch(function(){v.controls=true;});}
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting&&e.intersectionRatio>=0.35){if(!reduce||!v.muted)play();}else{v.pause();}
+    });},{threshold:[0,0.35,0.7]}).observe(v);
+  } else play();
+  b.addEventListener('click',function(){
+    v.muted=!v.muted; b.setAttribute('aria-pressed',String(!v.muted)); t.textContent=v.muted?'Sound on':'Sound off';
+    if(!v.muted){v.currentTime=v.currentTime;play();}
+  });
+})();
+</script>
+
+</body></html>
