@@ -1,4 +1,4 @@
-# Messaging — InfografiAI
+# Messaging — infograf/ai
 
 ## Core message hierarchy
 
@@ -32,7 +32,7 @@ work call for. There is no single fixed chain. This is explicitly positioned aga
 prompt-to-video output.
 
 ### Pillar 3 — Borrowed rigor, new register
-InfografiAI is not a discount version of Infografia and not a disconnected startup. It's
+infograf/ai is not a discount version of Infografia and not a disconnected startup. It's
 the same studio's standards applied to a more experimental, cinematic creative register.
 
 ### Pillar 4 — Capability unlocks access, not corners cut
@@ -51,6 +51,7 @@ seamless AI magic / cheap / fast turnaround (as a headline claim) / limitless
 ## Sample messaging by touchpoint
 
 - **Site hero:** "Directed, not generated." + one-line sub on hybrid craft.
+- **Posters, brand book and trailer end card:** "Direction, Not Generation." (both lines stay in use for now)
 - **Reel intro card:** No claim at all — let the process breakdown (storyboard → AI → final)
   make the argument visually before any copy does.
 - **Pitch deck opening line:** "We've spent 15 years making complex things clear. This is

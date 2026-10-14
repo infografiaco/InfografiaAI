@@ -1,7 +1,7 @@
 # How this system works
 
 This folder is structured so an AI agent (Claude or otherwise) can pick it up
-cold and have everything it needs to work on the InfografiAI brand
+cold and have everything it needs to work on the infograf/ai brand
 consistently, without re-deriving strategy from scratch every session.
 
 ## The layers
@@ -26,7 +26,7 @@ consistently, without re-deriving strategy from scratch every session.
 
 - Talk through positioning and content decisions before building files —
   drafting before alignment wastes work.
-- Push back substantively on scope, tone, or the Infografia/InfografiAI
+- Push back substantively on scope, tone, or the Infografia / infograf/ai
   relationship when something drifts from the strategy in `agent/verbal/`.
 - Capability leads in all messaging; cost/speed efficiency supports but never
   headlines (see `agent/verbal/positioning.md`).

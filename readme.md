@@ -1,6 +1,6 @@
-# InfografiAI — Brand Book & Atomic Design System
+# infograf/ai — Brand Book & Atomic Design System
 
-InfografiAI is the AI-directed production division of **Infografia**, a 15-year
+infograf/ai is the AI-directed production division of **Infografia**, a 15-year
 Australian information design, animation and visual communication studio. This
 repo holds the brand book, positioning, and design system built for it — used
 both as real brand infrastructure for the studio and as the working basis for
@@ -9,11 +9,13 @@ an ELVTR AI design course's assignment sequence.
 ## Structure
 
 ```
-InfografiAI/
+InfografiaAI/
 ├── readme.md              ← this file
 ├── magic_trick.md          ← quick-start notes / how this system is meant to be used
 ├── human/                  ← drop source PDFs, brand guidelines, reference material here
+├── deliverables/           ← course hand-ins: brand book PDF, brand book website, assignment decks
 └── agent/
+    ├── visual/              ← the visual layer — logo, posters, website, trailer, skill and governance
     └── verbal/              ← the verbal foundation — positioning, audience, voice
         ├── positioning.md
         ├── audience.yaml
@@ -23,14 +25,14 @@ InfografiAI/
         └── voice.md
 ```
 
-A `visual/` layer (colors & type tokens, components, motion system, assembled
-artifacts) is the next stage — see `magic_trick.md`.
+The `visual/` layer holds the logo, the poster system skill, the governance
+prompt, the website and the trailer — see `agent/visual/readme.md`.
 
 ## Core positioning
 
 > AI is the production capability. Creative direction is the product.
 
-InfografiAI is a **division** of Infografia — "InfografiAI, by Infografia" —
+infograf/ai is a **division** of Infografia — "infograf/ai, by Infografia" —
 not a standalone sister brand. It inherits Infografia's 15-year credibility
 and enterprise/government trust while operating its own visual language for
 cinematic, experimental and brand-film work. See `agent/verbal/positioning.md`
@@ -40,7 +42,7 @@ case considered *against* a separate brand.
 ## Course context
 
 This repo also tracks deliverables for an ELVTR AI design course, using the
-real InfografiAI brand as the subject rather than a throwaway speculative
+real infograf/ai brand as the subject rather than a throwaway speculative
 exercise:
 
 - **Assignment #01** — Speculative Brand Definition (3-slide deck: product,

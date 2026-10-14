@@ -1,4 +1,4 @@
-# Positioning — InfografiAI
+# Positioning — infograf/ai
 
 ## Category
 AI-directed creative production. Not "AI video studio," not "production company," not "AI content."
@@ -15,7 +15,7 @@ experience from Infografia, with skills and capabilities extended by AI.
 as "everything for everyone" — the single offer is direction.
 
 ## Structural position
-InfografiAI is a division of Infografia — "InfografiAI, by Infografia" — not a standalone sister brand.
+infograf/ai is a division of Infografia — "infograf/ai, by Infografia" — not a standalone sister brand.
 It inherits Infografia's 15-year credibility and enterprise/government trust, while operating its own
 visual language and creative latitude for cinematic, experimental, brand-film and advertising work that
 wouldn't sit comfortably next to a government report.
@@ -25,7 +25,7 @@ a fully independent brand, and revisit if/when demand proves the division needs 
 
 ## Positioning statement
 For organisations and brands who want cinematic, high-craft visual content directed with intention —
-not generated at random — InfografiAI is the AI-directed production division of Infografia. We combine
+not generated at random — infograf/ai is the AI-directed production division of Infografia. We combine
 15+ years of information design, motion design and film craft with deep technical command of generative
 pipelines, so the work does what was previously impossible for a project at this scale — and, because the
 pipeline is AI-native, does it inside a fraction of a traditional production's budget and timeline.
